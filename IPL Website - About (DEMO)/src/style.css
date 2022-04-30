@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    width: 100%; height: 100%;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+.block-1 {
+  display: grid;
+  align-items: left;
+  place-items: center;
+  margin: 0 auto;
+  padding: 5%;
+  width: 100%; height: 100%;
+  background-image: linear-gradient(0deg,
+    rgba(67, 127, 199, 0.8) 100%,
+    rgba(109, 175, 254, 0.1) 100%);
+  overflow-x: hidden;
+}
+
+.block-2 {
+  width: 100%; height: 100%;
+  display: grid;
+  align-items: center;
+  place-items: center;
+  padding: 4%;
+  background-color: #6daffe;
+  overflow-x: hidden;
+}
+
+.block-4 {
+  width: 100%; height: 30vh;
+  display: flex;
+  border-top: 1px solid #c0c0c0;
+  background-color: #6daffe;
+  overflow-x: hidden;
+}
+
+.block h2 {
+  width: 100%;
+  color: #faf4f4;
+  margin-right: 18em;
+}
+
+.sosmed-icon {
+  display: grid;
+}
+
+.sosmed-icon-2 {
+  display: flex;
+  width: 18em;
+  margin-top: 7.5em;
+  margin-left: 7.5em;
+}
+
+.icon {
+  margin: 0 auto;
+  align-items: left;
+  place-items: left;
+  color: #faf4f4;
+}
+
+.vector {
+  background-color: #faf4f4;
+  width: 100%;
+  height: .1em;
+  margin: .25em auto;
+}
+
+.main {
+  display: flex;
+}
+
+.container {
+  width: 50%;
+}
+
+.container-2 {
+  width: 90%;
+  position: absolute;
+  left: 70%;
+}
+
+.block-1 .hashtag {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.block-1 .hashtag span {
+  font-size: 2.9rem;
+  margin: 0;
+}
+
+.container p {
+  width: 90%;
+}
+
+.block-1 .heading {
+  margin-top: 20rem;
+  margin-right: 3.5rem;
+  color: #fff;
+}
+
+.block-2 .container {
+  width: 100%;
+  font-size: 2.9rem;
+  color: #fff;
+  margin-right: 10em;
+}
+
+.block-2 .hashtag span {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.block-2 .heading {
+  margin-top: 5em;
+  margin-left: auto;
+}
+
+.block-4 .hashtag {
+  width: 18em;
+  margin-top: 2.25em;
+  margin-left: 7em;
+  color: #faf4f4;
+  font-size: 3rem;
+}
+
+.block-4 img {
+  margin-top: 3em;
+}
+
+.block-1 .btn {
+  width: 18rem; height: 5rem;
+  margin-top: 6.5em;
+}
+
+.block-2 .btn {
+  width: 18rem; height: 5rem;
+  margin-top: 2.5em; margin-right: 3em;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #faf4f4;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #faf4f4;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.navbar {
+  display: flex;
+  align-items: right;
+  padding: 1rem 1.5rem;
+  background-image: linear-gradient(0deg,
+    rgba(67, 127, 199, 0.8) 100%,
+    rgba(109, 175, 254, 0.1) 100%);
+}
+
+.active {
+  border-bottom: 2px solid #87ceeb;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+    margin-right: 3.5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #faf4f4;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo img {
+    width: 25em;
+}
+
+nav i {
+  margin-right: 1em;
+  color: #faf4f4;
+}
+
+.polygon {
+  position: absolute;
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+  
+  .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
